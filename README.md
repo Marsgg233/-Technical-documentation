@@ -11,50 +11,69 @@ cd путь/к/вашей/папке
 ```
 
  3. Склонируйте репозиторий:
-**git clone https://github.com/ваш-username/название-репозитория.git**
+```
+git clone https://github.com/ваш-username/название-репозитория.git
+```
 
  4. Перейдите в папку проекта:
-**cd название-репозитория**
-
+```
+cd название-репозитория
+```
 # Инструкция по загрузке коммита:
 
  1. Добавьте изменённые файлы:
-**git add .**
-
+```
+git add .
+```
  *Или*
  
 для конкретного файла:
-**git add имя_файла.md**
-
+```
+git add имя_файла.md
+```
  2. Создайте коммит:
-**git commit -m "Описание внесённых изменений"**
-
+```
+git commit -m "Описание внесённых изменений"
+```
  3. Загрузите коммит в репозиторий:
-**git push origin main**
-
+```
+git push origin main
+```
 *Или*
 
-**git push origin master**
-
+```
+git push origin master
+```
 # Дополнительные команды:
 
  Проверить статус:
-**git status**
+```
+git status
+```
 
  Просмотреть историю коммитов:
-**git log**
+```
+git log
+```
 
  Обновить локальный репозиторий:
-**git pull origin main**
-
+ ```
+git pull origin main
+```
 # Установка Git (если не установлен):
 
  Для Ubuntu/Debian:
-**sudo apt update**
-**sudo apt install git**
-
+```
+sudo apt update
+```
+```
+sudo apt install git
+```
  Для macOS:
-**brew install git**
-
+```
+brew install git
+```
  Для Windows - скачайте с сайта:
- **https://gitforwindows.org/**
+ ```
+https://gitforwindows.org/
+ ```
