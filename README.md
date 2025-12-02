@@ -60,6 +60,9 @@ git log
  ```
 git pull origin main
 ```
+
+<img width="268" height="240" alt="image" src="https://github.com/user-attachments/assets/35eb2406-2d61-4db8-b296-6090c6e887b7" />
+
 # Установка Git (если не установлен):
 
  Для Ubuntu/Debian:
