@@ -19,7 +19,7 @@ GabbasovMR24@spb.ithub.ru
  1. Добавьте изменённые файлы:
 **git add .**
 
- Или
+ *Или*
  
 для конкретного файла:
 **git add имя_файла.md**
@@ -30,7 +30,7 @@ GabbasovMR24@spb.ithub.ru
  3. Загрузите коммит в репозиторий:
 **git push origin main**
 
-или
+*Или*
 
 **git push origin master**
 
