@@ -77,3 +77,5 @@ brew install git
  ```
 https://gitforwindows.org/
  ```
+ <img width="792" height="613" alt="image" src="https://github.com/user-attachments/assets/0d7d1638-8fdb-4804-9c49-ad2fecd1c2f5" />
+
