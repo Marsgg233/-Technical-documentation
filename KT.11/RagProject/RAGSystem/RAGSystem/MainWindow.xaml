@@ -1,0 +1,54 @@
+﻿<Window x:Class="RAGSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="RAG System" Height="700" Width="1000">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <GroupBox Grid.Row="0" Header="Управление" Margin="10">
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="btnLoad" Content="Загрузить ТЗ" Width="120" Height="30" Margin="10" Click="BtnLoad_Click"/>
+                <Button x:Name="btnSplit" Content="Разбить на части" Width="120" Height="30" Margin="10" Click="BtnSplit_Click"/>
+                <Button x:Name="btnSaveVectors" Content="Сохранить векторы" Width="120" Height="30" Margin="10" Click="BtnSaveVectors_Click"/>
+                <TextBlock x:Name="tbStatus" VerticalAlignment="Center" Margin="20"/>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Grid.Row="1" Header="Текст ТЗ" Margin="10">
+            <TextBox x:Name="txtTZ" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"/>
+        </GroupBox>
+
+        <GroupBox Grid.Row="2" Header="Поиск и генерация" Margin="10">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBox x:Name="txtQuery" Width="600" Height="30" Margin="10"/>
+                    <Button x:Name="btnFind" Content="Найти похожие" Width="120" Height="30" Margin="10" Click="BtnFind_Click"/>
+                    <Button x:Name="btnGenerate" Content="Сгенерировать" Width="120" Height="30" Margin="10" Click="BtnGenerate_Click"/>
+                </StackPanel>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Grid.Row="3" Header="Результаты" Margin="10">
+            <TabControl>
+                <TabItem Header="Найденные части">
+                    <DataGrid x:Name="dgResults" AutoGenerateColumns="False">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50"/>
+                            <DataGridTextColumn Header="Сходство" Binding="{Binding Similarity}" Width="100"/>
+                            <DataGridTextColumn Header="Текст" Binding="{Binding Text}" Width="*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </TabItem>
+                <TabItem Header="Ответ">
+                    <TextBox x:Name="txtAnswer" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"/>
+                </TabItem>
+            </TabControl>
+        </GroupBox>
+    </Grid>
+</Window>
